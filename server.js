@@ -91,6 +91,6 @@ app.get('*', (req, res) =>
 );
 
 // Start the server
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
